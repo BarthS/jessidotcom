@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>JESSI</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- This following line is needed in case of using the default easing option or when using another
+     one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
+    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript">
+  		$(document).ready(function() {
+  			$('#fullpage').fullpage({
+  				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  				menu: '#menu',
+          navigation: true
+  			});
+
+  			$('#showExamples').click(function(e){
+  				e.stopPropagation();
+  				$('#examplesList').toggle();
+  			});
+
+  			$('html').click(function(){
+  				$('#examplesList').hide();
+  			});
+  		});
+  	</script>
+
+  </head>
+  <body>
+<!--     <ul id="menu">
+    	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+    	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+    </ul> -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu" role="navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+          <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+          <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+          <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="fullpage">
+      <div class="section">Some section</div>
+      <div class="section">Some section</div>
+      <div class="section">Some section</div>
+      <div class="section">Some section</div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #menu li {
+  display:inline-block;
+  margin: 10px;
+  color: #000;
+  background:#fff;
+  background: rgba(255,255,255, 0.5);
+  -webkit-border-radius: 10px;
+            border-radius: 10px;
+  }
+  #menu li.active{
+  	background:#666;
+  	background: rgba(0,0,0, 0.5);
+  	color: #fff;
+  }
+  #menu li a{
+  	text-decoration:none;
+  	color: #000;
+  }
+  #menu li.active a:hover{
+  	color: #000;
+  }
+  #menu li:hover{
+  	background: rgba(255,255,255, 0.8);
+  }
+  #menu li a,
+  #menu li.active a{
+  	padding: 9px 18px;
+  	display:block;
+  }
+  #menu li.active a{
+  	color: #fff;
+  }
+  #menu{
+  	position:fixed;
+  	top:0;
+  	left:0;
+  	height: 40px;
+  	z-index: 70;
+  	width: 100%;
+  	padding: 0;
+  	margin:0;
+  }
+</style>
