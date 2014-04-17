@@ -21,10 +21,9 @@
     <script type="text/javascript">
   		$(document).ready(function() {
   			$('#fullpage').fullpage({
-  				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-  				menu: '#menu',
-          navigation: true
+  				slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#1bbc9b'],
+  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+  				menu: '#menu'
   			});
 
   			$('#showExamples').click(function(e){
@@ -49,18 +48,59 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="menu" role="navigation">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
-          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-          <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-          <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
-          <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">JESSI</a></li>
+          <li data-menuanchor="secondPage"><a href="#secondPage">Nos prestations</a></li>
+          <li data-menuanchor="3rdPage"><a href="#3rdPage">Qui sommes nous ?</a></li>
+          <li data-menuanchor="4thpage"><a href="#4thpage">Références</a></li>
+          <li data-menuanchor="5thpage"><a href="#5thpage">Contact</a></li>
         </ul>
       </div>
     </nav>
     <div id="fullpage">
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
+      <div class="section">
+        <div class="container">
+          <h1>JESSI</h1>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slide active">
+          <div class="intro container">
+            <h1> Nos compétences </h1>
+          </div>
+        </div>
+        <div class="slide">
+            <div class="intro container">
+              <h1> Notre méthodologie </h1>
+            </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slide active">
+    			<div class="intro container">
+    				<h1> Les responsables </h1>
+    			</div>
+    		</div>
+    	  <div class="slide">
+    		    <div class="intro container">
+              <h1> Les intervenants </h1>
+            </div>
+    		</div>
+    	    <div class="slide">
+      			<div class="intro container">
+              <h1> On recrute ! </h1>
+           </div>
+  		  </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <h1>Références</h1>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <h1>Références</h1>
+        </div>
+      </div>
     </div>
   </body>
 </html>
@@ -72,8 +112,8 @@
   color: #000;
   background:#fff;
   background: rgba(255,255,255, 0.5);
-  -webkit-border-radius: 10px;
-            border-radius: 10px;
+/*  -webkit-border-radius: 10px;
+            border-radius: 10px;*/
   }
   #menu li.active{
   	background:#666;
