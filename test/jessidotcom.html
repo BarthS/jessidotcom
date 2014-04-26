@@ -36,7 +36,7 @@
   			});
   		});
   	</script>
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
   </head>
   <body>
 <!--     <ul id="menu">
@@ -45,10 +45,10 @@
     	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
     	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
     </ul> -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="menu" role="navigation">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">JESSI</a></li>
+    <nav id="menu" role="navigation">
+      <div>
+        <ul>
+          <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Accueil</a></li>
           <li data-menuanchor="secondPage"><a href="#secondPage">La Junior</a></li>
           <li data-menuanchor="3rdPage"><a href="#3rdPage">Nos prestations</a></li>
           <li data-menuanchor="4thpage"><a href="#4thpage">Qui sommes nous ?</a></li>
@@ -60,9 +60,13 @@
     <div id="fullpage">
       <div class="section">
         <div class="container">
-          <div class="row col-md-12">
-            <h1>JESSI</h1>
-            <p>Présentation succinte de la JESSI</p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="logo-big.png"/>
+            </div>
+            <div class="col-md-6">
+              <h1>Présentation JESSI
+            </div>
           </div>
           <div class="row">
             <div class="col-md-4">
@@ -75,19 +79,16 @@
               <h1>Encart sur les services</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h1>Demande de devis</h1>
-            </div>
-            <div class="col-md-6">
-              <h1>Nous contacter</h1>
-            </div>
-          </div>
+
           <div class="row col-md-12">
             <p>Mentions légales</p>
           </div>
+
         </div>
       </div>
+
+
+
       <div class="section">
         <div class="container">
           <h1>La Junior</h1>
@@ -136,47 +137,4 @@
   </body>
 </html>
 
-<style>
-  #menu li {
-  display:inline-block;
-  margin: 10px;
-  color: #000;
-  background:#fff;
-  background: rgba(255,255,255, 0.5);
-/*  -webkit-border-radius: 10px;
-            border-radius: 10px;*/
-  }
-  #menu li.active{
-  	background:#666;
-  	background: rgba(0,0,0, 0.5);
-  	color: #fff;
-  }
-  #menu li a{
-  	text-decoration:none;
-  	color: #000;
-  }
-  #menu li.active a:hover{
-  	color: #000;
-  }
-  #menu li:hover{
-  	background: rgba(255,255,255, 0.8);
-  }
-  #menu li a,
-  #menu li.active a{
-  	padding: 9px 18px;
-  	display:block;
-  }
-  #menu li.active a{
-  	color: #fff;
-  }
-  #menu{
-  	position:fixed;
-  	top:0;
-  	left:0;
-  	height: 40px;
-  	z-index: 70;
-  	width: 100%;
-  	padding: 0;
-  	margin:0;
-  }
-</style>
+
