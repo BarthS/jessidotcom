@@ -1,0 +1,563 @@
+/* 
+* Thank you for downloading "Tree House" Template.. 
+* I hope you like it ♥♥♥
+*
+*  Theme Name: 	Tree House
+*   Theme URI:  http://themeforest.net/user/ahmdyassr
+* Description: 	Tree House is beautiful responsive FREE html template.
+*      Author: 	Ahmed Yasser
+*  Author URI: 	http://themeforest.net/user/ahmdyassr
+*     Version: 	1.0
+*/
+
+/* ----------------------------------------------------------------------- */
+
+
+/* --------- Basic Styles --------- */
+body {
+	font-family: 'Open Sans', Arial;
+}
+
+/* Typography*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+p {
+	color: #777;
+}
+
+a {
+	color: #7cc576;
+	text-decoration: none;
+
+	/* CSS3 Transition */
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-ms-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+	a:hover {
+		color: #5d9758;
+		text-decoration: none;
+	}
+
+/* Basic Styles for any button */
+.btn {
+	border-radius: 30px;
+	background-color: #7cc576;
+	padding: 15px 25px;
+	color: #fff;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: #86d080;
+}
+
+/* Basic Styles for any blockquote */
+blockquote {
+	background-color: #f1f1f1;
+	font-size: 16px;
+	color: #777;
+	line-height: 28px;
+	padding: 40px;
+}
+
+/* --------------------------- Styles --------------------------- */
+
+/* --------- Header Styles --------- */
+header {
+	margin: 30px 0;
+}
+
+header nav ul {
+	padding-top: 10px;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding-left: 40px;
+}
+
+header nav ul li a {
+	color: #777;
+	text-transform: uppercase;
+}
+
+/* --- Bootstrap Navigation Bar Customization --- */
+.navbar {
+	background-color: #fff;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: none;
+}
+
+.nav.navbar-nav {
+	padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #7cc576;
+}
+
+/* Styling for navbar toggle that appears on small mobile devices */
+.navbar-default .navbar-toggle {
+  border-color: #7cc576;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #eeefee;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #7cc576;
+}
+
+/* Media fix for bootstrap navigation bar in medium screen sizes */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: none;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-collapse.collapse.in { 
+    	display: block !important; 
+    }
+}
+
+/* --------- Intro Styles --------- */
+.intro {
+	background: #fff url(../img/splash.jpg) fixed center center no-repeat;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	text-align: center;
+	color: #fff;
+	padding: 100px 0;
+}
+	.intro h1 {
+		padding-bottom: 35px;
+	}
+
+	.intro h3 {
+		padding-bottom: 35px;
+	}
+
+	.intro .btn {
+		padding-left: 35px;
+		padding-right: 35px;
+		text-transform: uppercase;
+
+		text-shadow: 2px 2px  #42aa3f;
+	}
+
+	.intro a.btn:hover {
+		color: #fff;
+	}
+
+/* --------- Services Styling --------- */
+.services {
+	padding: 100px 0;
+	text-align: center;
+}
+.services .services-features-col {
+	margin-bottom: 30px;
+}
+	/* Services Title & Description */
+	.services-title{
+		padding-bottom: 80px;
+	}
+		.services-title h2 {
+			padding-bottom: 20px;
+		}
+
+		.services-title p {
+			font-size: 20px;
+		}
+
+	/* Services Features */
+	.services-features img {
+		padding-bottom: 25px;
+	}
+
+	.services-features h3 {
+		padding-bottom: 15px;
+	}
+
+	.services-features p {
+		width: 80%;
+		text-align: center;
+		line-height: 24px;
+		margin: 0 auto;
+	}
+
+
+
+/* --------- Features Styling --------- */
+.features {
+	background-color: #e9e9e9;
+}
+.features-gear-bg {
+	/* Styling for the small gear icon background */
+	/* It will disappear in small screen sizes */ 
+	background: #e9e9e9 url(../img/gear.png) 20% 50% no-repeat;
+}
+	.features .col-lg-9 {
+		/* Styling for the Sea background */
+		/* It will take the whole width in small screen sizes */
+		background: url(../img/splash-relax.jpg) center right no-repeat;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		padding: 100px 50px;
+	}
+
+	.features h2 {
+		color: #fff;
+		text-transform: uppercase;
+		padding-bottom: 35px;
+		line-height: 50px;
+	}
+
+	.features .amp {
+		color: #7cc576;
+	}
+
+	.features p {
+		line-height: 24px;
+		color: #ccc;
+		padding-bottom: 30px;
+	}
+
+	.features ul li {
+		background: url(../img/check-icon.png) left center no-repeat;
+		color: #ccc;
+		padding: 10px 0 10px 50px;
+		margin-bottom: 20px;
+	}
+
+		.features ul li:last-child {
+			margin-bottom: 0;
+		}
+
+	.features .btn {
+		margin-top: 40px;
+	}
+
+	.features a.btn:hover {
+		color: #fff;
+	}
+
+@media (max-width: 1200px){
+	.features-gear-bg {
+		/* Styling for the small gear icon background */
+		background: #e9e9e9;
+		background-image: none;
+	}
+}
+
+@media (max-width: 768px){
+	.features-gear-bg {
+		/* Styling for the small gear icon background */
+		background: none;
+	}
+}
+/* --------- Latest Project Styling --------- */
+.latest {
+
+	/* Styling for the iPad background */
+	padding: 100px 0;
+}
+	.latest-title {
+		text-align: center;
+	}	
+		.latest-title h2 {
+			text-transform: uppercase;
+			padding-bottom: 20px;
+		}
+
+	.latest-features {
+		padding-top: 70px;
+	}
+
+		.latest-features h3 {
+			padding-bottom: 20px;
+			text-transform: uppercase;
+		}
+
+		.latest-features p.last-des {
+			clear: both;
+			padding: 15px 0 30px 0;
+		}
+
+		.latest-features a {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.latest-features h3 + p {
+			padding-bottom: 25px;
+		}
+
+		.latest-features li {
+			padding-bottom: 20px; 
+		}
+
+			.latest-features li img {
+				float: left;
+				padding-right: 15px;
+			}
+
+			.latest-features li h4 {
+				padding-top: 15px;
+			}
+
+			.latest-features li p {
+				padding-top: 7px;
+			}
+.latest img.ipad {
+	padding-top: 100px;
+}
+@media screen and (max-width: 1325px) {
+	.latest {
+
+		/* Styling for the iPad background in small screen sizes */
+		background: #fff;
+	}
+}
+
+/* --------- Features-2 Styling --------- */
+.features2 {
+	background-color: #f9f9f9;
+	padding: 100px 0;
+	text-align: center;
+}
+	.features2-title {
+		padding-bottom: 70px;
+	}
+
+		.features2-title h2 {
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+
+	.features2 .features2-col {
+		margin-bottom: 30px;
+	}
+
+	.features2 img {
+		padding-bottom: 25px;
+	}
+
+	.features2 h3 {
+		padding-bottom: 18px;
+	}
+
+	.features2 p {
+		width: 80%;
+		margin: 0 auto;
+		line-height: 22px;
+	}
+
+/* --------- Clients Styling --------- */
+.clients {
+	padding: 100px 0;
+}
+	.clients .row + .row {
+		margin-bottom: 60px;
+	}
+
+	.clients .row:last-child {
+		margin-bottom: 0;
+	}
+
+	.clients-title {
+		text-align: center;
+		padding-bottom: 70px;
+	}
+		.clients-title h2 {
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+
+	.client-img {
+		width: 164px;
+		height: 164px;
+		margin: 0 auto 20px auto;
+
+		/* Styles for the circle */
+		border-radius: 164px;
+		background-color: #f1f1f1;
+	}
+
+/* --------- Contact Styling --------- */
+.contact {
+	padding: 70px 0;
+	background-color: #7cc576;
+	text-align: center;
+}
+	.contact h1 {
+		color: #fff;
+		font-size: 50px;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+	}
+	.contact a.contact-btn {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: bold;
+		background-color: transparent;
+		color: #fff;
+		padding: 15px 30px;
+		border: 3px solid #fff;
+		border-radius: 4px;
+	}
+
+	.contact a.contact-btn:hover {
+		background-color: #83cc7d;
+	}
+
+/* --------- Contact Styling --------- */
+.clients-imgs {
+	padding: 70px 0;
+}
+	.clients-imgs ul li {
+		display: inline-block;
+		padding-bottom: 20px;
+	}
+
+/* --------- Footer Styling --------- */
+footer {
+	background-color: #222;
+	padding: 100px 0 50px 0;
+	color: #fff;
+}
+
+footer h3 {
+	padding-bottom: 25px;
+}
+
+.contact-col,
+.latest-col,
+.tweets-col {
+	margin-bottom: 50px;
+}
+
+/* Styles For the contact column */
+footer .contact-col img {
+	float: left;
+	padding-right: 10px;
+}
+
+.location-info,
+.phone-info,
+.email-info {
+	margin-bottom: 20px;
+}
+
+/* Styles For the latest posts column */
+footer .latest-col li {
+	margin-bottom: 15px;
+}
+
+	footer .latest-col img {
+		float: left;
+		padding-right: 12px;
+	}
+
+	footer .latest-col a {
+		color: #fff;
+	}
+		footer .latest-col a:hover {
+			color: #7cc576;
+			text-decoration: underline;
+		}
+
+/* Styles For the tweets column */
+footer .tweets-col li {
+	margin-bottom: 15px;
+}
+
+footer .tweets-col li a {
+	color: #fff;
+	line-height: 24px;
+}
+
+footer .tweets-col li .hashtag {
+	font-weight: bold;
+}
+
+/* --------- Copyright Styling --------- */
+.copy {
+	background-color: #fff;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.copy img {
+	/* CSS3 Transition */
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+}
+
+.copy img:hover {
+	/* CSS3 Transform */
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	translate: rotate(360deg);
+}
+
