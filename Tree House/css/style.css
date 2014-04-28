@@ -1,5 +1,5 @@
-/* 
-* Thank you for downloading "Tree House" Template.. 
+/*
+* Thank you for downloading "Tree House" Template..
 * I hope you like it ♥♥♥
 *
 *  Theme Name: 	Tree House
@@ -167,8 +167,8 @@ header nav ul li a {
         float: none;
     }
 
-    .navbar-collapse.collapse.in { 
-    	display: block !important; 
+    .navbar-collapse.collapse.in {
+    	display: block !important;
     }
 }
 
@@ -250,7 +250,7 @@ header nav ul li a {
 }
 .features-gear-bg {
 	/* Styling for the small gear icon background */
-	/* It will disappear in small screen sizes */ 
+	/* It will disappear in small screen sizes */
 	background: #e9e9e9 url(../img/gear.png) 20% 50% no-repeat;
 }
 	.features .col-lg-9 {
@@ -325,7 +325,7 @@ header nav ul li a {
 }
 	.latest-title {
 		text-align: center;
-	}	
+	}
 		.latest-title h2 {
 			text-transform: uppercase;
 			padding-bottom: 20px;
@@ -355,7 +355,7 @@ header nav ul li a {
 		}
 
 		.latest-features li {
-			padding-bottom: 20px; 
+			padding-bottom: 20px;
 		}
 
 			.latest-features li img {
@@ -364,7 +364,7 @@ header nav ul li a {
 			}
 
 			.latest-features li h4 {
-				padding-top: 15px;
+				padding-top: 10px;
 			}
 
 			.latest-features li p {
@@ -566,4 +566,3 @@ footer .tweets-col li .hashtag {
 	-o-transform: rotate(360deg);
 	translate: rotate(360deg);
 }
-
