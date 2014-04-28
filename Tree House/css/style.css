@@ -469,7 +469,8 @@ header nav ul li a {
 	}
 
 	.contact a.contact-btn:hover {
-		background-color: #83cc7d;
+		color: #a1c436;
+		background-color: #f9f9f9;
 	}
 
 /* --------- Contact Styling --------- */
