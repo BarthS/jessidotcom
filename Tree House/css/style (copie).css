@@ -122,12 +122,12 @@ header nav ul li a {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	color: #B2D547;
+	color: #7cc576;
 }
 
 /* Styling for navbar toggle that appears on small mobile devices */
 .navbar-default .navbar-toggle {
-  border-color: #B2D547;
+  border-color: #7cc576;
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -136,7 +136,7 @@ header nav ul li a {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #B2D547;
+  background-color: #7cc576;
 }
 
 /* Media fix for bootstrap navigation bar in medium screen sizes */
@@ -275,7 +275,7 @@ header nav ul li a {
 	}
 
 	.features .amp {
-		color: #a1c436;
+		color: #7cc576;
 	}
 
 	.features p {
